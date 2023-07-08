@@ -5,11 +5,12 @@
   --pmc: #005ae2;
   --font-type: Gilroy-medium;
   --bgc: #f5f5f5;
+  --pos: center;
 }
 body {
   overflow-x: hidden;
   margin: 0;
-  padding: 1% 1% 0 10%;
+  padding: 1% 1% 10% 10%;
   font-family: var(--font-type);
   background-color: var(--bgc);
 }
@@ -24,21 +25,17 @@ ul.nav, ul.nav-2 {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  align-items: center;
+  align-items: var(--pos);
   justify-content: space-evenly;
 }
 
-.header{
-  display: grid;
-  grid-template-areas: "logo nav nav-2";
-}
-.header__logo{
+.layout>header.logo{
   grid-area: logo;
 }
-.header__nav{
+.layout>header.nav{
   grid-area: nav;
 }
-.header__nav-2{
+.layout>header.nav-2{
   grid-area: nav-2;
 }
 
@@ -58,3 +55,42 @@ ul.nav, ul.nav-2 {
   border: none;
   background-color: var(--bgc);
 }
+
+.layout>header{
+  display: grid;
+  grid-template-areas: 
+  "logo nav nav-2"
+  ;
+  
+}
+p.optimize {
+  text-align: var(--pos);
+  font-size: 48px;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.layout>main>section>div.image,
+.layout>main>section>div.closure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--pos);
+  align-items: center;
+  
+}
+.layout>main>section>div.image {
+position: relative;
+  top: -55px;
+  right: -10px;
+}
+.layout>main>section>div.closure {
+  gap: 50px;
+}
+p.personalize {
+  font-size: 18px;
+  margin-left: 22%;
+  margin-right: 22%;
+  text-align: var(--pos);
+} 
+
+
