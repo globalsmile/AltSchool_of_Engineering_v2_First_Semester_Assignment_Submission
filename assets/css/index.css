@@ -6,6 +6,9 @@
   --font-type: Gilroy-medium;
   --bgc: #f5f5f5;
   --pos: center;
+  --posit: relative;
+  --fwrap: wrap;
+  --flex: flex;
 }
 body {
   overflow-x: hidden;
@@ -20,8 +23,8 @@ a {
 }
 nav > ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: var(--flex);
+  flex-wrap: var(--fwrap);
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -39,8 +42,8 @@ nav > ul {
   grid-area: nav-2;
 }
 
-.sciss {
-  position: relative;
+.layout > header > div.logo > a.logo-link > img.sciss {
+  position: var(--posit);
   bottom: 5px;
 }
 .try-button {
@@ -69,20 +72,20 @@ p.optimize {
 }
 p.personalize {
   font-size: 18px;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 18%;
+  margin-right: 18%;
   text-align: var(--pos);
 }
 .layout > main > section > div.image,
 .layout > main > section > div.closure,
 .layout > main > section > div.center-img {
-  display: flex;
-  flex-wrap: wrap;
+  display: var(--flex);
+  flex-wrap: var(--fwrap);
   justify-content: var(--pos);
-  align-items: center;
+  align-items: var(--pos);
 }
 .layout > main > section > div.image {
-  position: relative;
+  position: var(--posit);
   top: -55px;
   right: -10px;
 }
@@ -90,11 +93,43 @@ p.personalize {
   gap: 50px;
   padding-top: 30px;
 }
-.layout > main > section > div.center-img > img.frame,
-.layout > main > section > div.center-img > img.oval {
+.layout > main > section > div.center-img > img.frame {
   width: 80%;
+}
+.layout > main > section > div.center-img > img.oval {
+  width: 100%;
 }
 
 .layout > main > section > div.center-img > img.frame {
-  padding-top: 50px;
+  margin-top: 5%;
+}
+
+.layout > main > section > div.up-content {
+  display: grid;
+  grid-template-areas: "one-stop m-3 m-60 b-1 k-300";
+  margin-top: 5%;
+}
+.layout > main > section > div.up-content > div.one-stop {
+  grid-area: one-stop;
+}
+.layout > main > section > div.up-content > div.m-3 {
+  grid-area: m-3;
+}
+.layout > main > section > div.up-content > div.m-60 {
+  grid-area: m-60;
+}
+.layout > main > section > div.up-content > div.b-1 {
+  grid-area: b-1;
+}
+.layout > main > section > div.up-content > div.k-300 {
+  grid-area: k-300;
+}
+
+.layout > main > section > div.up-content > p.one-stop > span {
+  font-size: 40px;
+  font-weight: 900;
+}
+.layout > main > section > div.up-content > p > span {
+  font-size: 32px;
+  font-weight: 600;
 }
