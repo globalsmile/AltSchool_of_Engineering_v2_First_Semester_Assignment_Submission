@@ -13,7 +13,6 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  padding: 1% 1% 10% 10%;
   font-family: var(--font-type);
   background-color: var(--bgc);
 }
@@ -61,6 +60,9 @@ nav > ul {
 
 .layout > header {
   display: grid;
+  padding-top: 1%;
+  padding-right: 5%;
+  padding-left: 10%;
   grid-template-areas: "logo nav nav-2";
 }
 p.optimize {
@@ -72,8 +74,8 @@ p.optimize {
 }
 p.personalize {
   font-size: 18px;
-  margin-left: 18%;
-  margin-right: 18%;
+  margin-left: 22%;
+  margin-right: 22%;
   text-align: var(--pos);
 }
 .layout > main > section > div.image,
@@ -107,7 +109,8 @@ p.personalize {
 .layout > main > section > div.up-content {
   display: grid;
   grid-template-areas: "one-stop m-3 m-60 b-1 k-300";
-  margin-top: 5%;
+  padding-left: 10%;
+  background-color: #F8F7F7;
 }
 .layout > main > section > div.up-content > div.one-stop {
   grid-area: one-stop;
