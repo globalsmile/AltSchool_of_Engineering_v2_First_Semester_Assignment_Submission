@@ -20,7 +20,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-nav > ul {
+.layout > header nav > ul {
   list-style: none;
   display: var(--flex);
   flex-wrap: var(--fwrap);
@@ -72,7 +72,7 @@ p.optimize {
   margin-left: 10%;
   margin-right: 10%;
 }
-p.personalize {
+.layout > main > section > p.personalize {
   font-size: 18px;
   margin-left: 22%;
   margin-right: 22%;
@@ -96,7 +96,7 @@ p.personalize {
   padding-top: 30px;
 }
 .layout > main > section > div.center-img > img.frame {
-  width: 70%;
+  width: 65%;
 }
 .layout > main > section > div.center-img > img.oval {
   width: 100%;
@@ -110,7 +110,7 @@ p.personalize {
   display: grid;
   grid-template-areas: "one-stop m-3 m-60 b-1 k-300";
   padding-left: 10%;
-  padding-right: 5%;
+  padding-right: 10%;
   background-color: #f8f7f7;
 }
 .layout > main > section > div.up-content > p.one-stop {
@@ -139,15 +139,21 @@ p.personalize {
   font-size: 18px;
   font-weight: 600;
 }
-
+.layout > main > section > div.down-content > p.url-short > span,
+.layout > main > section > div.down-content > p.custom-url > span,
+.layout > main > section > div.down-content > p.qr-codes > span,
+.layout > main > section > div.down-content > p.data-analytics > span {
+  display: grid;
+}
 .layout > main > section > div.down-content {
   display: grid;
-  column-gap: 96px;
+  column-gap: 40px;
   grid-template-areas:
     "scisss-hub url-short custom-url"
     "- qr-codes data-analytics";
   padding-left: 10%;
-  padding-right: 5%;
+  padding-right: 10%;
+  padding-top: 10%;
 }
 .layout > main > section > div.down-content > p.scisss-hub {
   grid-area: scisss-hub;
@@ -163,4 +169,12 @@ p.personalize {
 }
 .layout > main > section > div.down-content > p.data-analytics {
   grid-area: data-analytics;
+}
+.layout > main > section > div.down-content > p.url-short > img,
+.layout > main > section > div.down-content > p.custom-url > img,
+.layout > main > section > div.down-content > p.qr-codes > img,
+.layout > main > section > div.down-content > p.data-analytics > img {
+  display: grid;
+  padding-bottom: 30px;
+  width: 15%;
 }
