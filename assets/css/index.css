@@ -96,7 +96,7 @@ p.personalize {
   padding-top: 30px;
 }
 .layout > main > section > div.center-img > img.frame {
-  width: 80%;
+  width: 70%;
 }
 .layout > main > section > div.center-img > img.oval {
   width: 100%;
@@ -110,29 +110,57 @@ p.personalize {
   display: grid;
   grid-template-areas: "one-stop m-3 m-60 b-1 k-300";
   padding-left: 10%;
-  background-color: #F8F7F7;
+  padding-right: 5%;
+  background-color: #f8f7f7;
 }
-.layout > main > section > div.up-content > div.one-stop {
+.layout > main > section > div.up-content > p.one-stop {
   grid-area: one-stop;
 }
-.layout > main > section > div.up-content > div.m-3 {
+.layout > main > section > div.up-content > p.m-3 {
   grid-area: m-3;
 }
-.layout > main > section > div.up-content > div.m-60 {
+.layout > main > section > div.up-content > p.m-60 {
   grid-area: m-60;
 }
-.layout > main > section > div.up-content > div.b-1 {
+.layout > main > section > div.up-content > p.b-1 {
   grid-area: b-1;
 }
-.layout > main > section > div.up-content > div.k-300 {
+.layout > main > section > div.up-content > p.k-300 {
   grid-area: k-300;
 }
 
-.layout > main > section > div.up-content > p.one-stop > span {
+.layout > main > section > div.up-content > p.one-stop > span,
+.layout > main > section > div.down-content > p.sciss-hub > span {
   font-size: 40px;
   font-weight: 900;
 }
-.layout > main > section > div.up-content > p > span {
+.layout > main > section > div.up-content > p > span,
+.layout > main > section > div.down-content > p > span {
   font-size: 32px;
   font-weight: 600;
+}
+
+.layout > main > section > div.down-content {
+  display: grid;
+  column-gap: 96px;
+  grid-template-areas:
+    "scisss-hub url-short custom-url"
+    "- qr-codes data-analytics";
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.layout > main > section > div.down-content > p.scisss-hub {
+  grid-area: scisss-hub;
+}
+.layout > main > section > div.down-content > p.url-short {
+  grid-area: url-short;
+}
+.layout > main > section > div.down-content > p.custom-url {
+  grid-area: custom-url;
+}
+.layout > main > section > div.down-content > p.qr-codes {
+  grid-area: qr-codes;
+}
+.layout > main > section > div.down-content > p.data-analytics {
+  grid-area: data-analytics;
 }
