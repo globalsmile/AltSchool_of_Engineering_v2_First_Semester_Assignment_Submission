@@ -147,7 +147,7 @@ p.optimize {
 }
 .layout > main > section > div.down-content {
   display: grid;
-  column-gap: 40px;
+  gap: 40px;
   grid-template-areas:
     "scisss-hub url-short custom-url"
     "- qr-codes data-analytics";
@@ -173,8 +173,18 @@ p.optimize {
 .layout > main > section > div.down-content > p.url-short > img,
 .layout > main > section > div.down-content > p.custom-url > img,
 .layout > main > section > div.down-content > p.qr-codes > img,
-.layout > main > section > div.down-content > p.data-analytics > img {
+.layout > main > section > div.down-content > p.data-analytics > img {  
   display: grid;
   padding-bottom: 30px;
   width: 15%;
+}
+.layout > main > section > div.down-content > p.sciss-hub > img {
+  display: flex;
+  position: relative;
+  left: -5%;
+  bottom: -18%;
+}
+.layout > main > section > div.down-content > p.sciss-hub{
+  position: relative;
+  top: -15%;
 }
