@@ -130,7 +130,8 @@ p.optimize {
 }
 
 .layout > main > section > div.up-content > p.one-stop > span,
-.layout > main > section > div.down-content > p.sciss-hub > span {
+.layout > main > section > div.down-content > p.sciss-hub > span,
+.layout > main > section > div.perfect > p.price-perfect > b {
   font-size: 35px;
   font-weight: 900;
 }
@@ -176,7 +177,7 @@ p.optimize {
 .layout > main > section > div.down-content > p.data-analytics > img {  
   display: grid;
   padding-bottom: 30px;
-  width: 15%;
+
 }
 .layout > main > section > div.down-content > p.sciss-hub > img {
   display: flex;
@@ -187,4 +188,16 @@ p.optimize {
 .layout > main > section > div.down-content > p.sciss-hub{
   position: relative;
   top: -15%;
+}
+.layout > main > section > div.perfect > p.price-perfect {
+  font-size: 13px;
+  margin-left: 22%;
+  margin-right: 22%;
+  text-align: var(--pos);
+  padding-top: 5%;
+}
+.layout > main > section > div.perfect > p.price-perfect > b {
+  position: relative;
+  top: -15px;
+  right: -10px;
 }
