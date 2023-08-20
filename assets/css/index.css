@@ -71,6 +71,7 @@ p.optimize {
   font-weight: 600;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 5%;
 }
 .layout > main > section > p.personalize {
   font-size: 18px;
@@ -200,4 +201,78 @@ p.optimize {
   position: relative;
   top: -15px;
   right: -10px;
+}
+.layout > main > section > div.three-columns  div.professional > ul,
+.layout > main > section > div.three-columns  div.basic > ul,
+.layout > main > section > div.three-columns  div.teams > ul {
+  list-style: none;
+  font-size: 14px;
+  display: grid;
+  gap: 24px;
+  position: relative;
+  right: 30px;
+}
+.layout > main > section > div.three-columns  div.professional > ul > li > img,
+.layout > main > section > div.three-columns  div.basic > ul > li > img,
+.layout > main > section > div.three-columns  div.teams > ul > li > img {
+  position: relative;
+  right: 10px;
+  top: 3px;
+}
+.layout > main > section > div.three-columns {
+  display: grid;
+  grid-template-areas: "basic professional teams";
+  padding-top: 5%;
+  padding-left: 3%;
+}
+.layout > main > section > div.three-columns > div.basic {
+  grid-area: basic;
+  border: 1px solid #005AE2;
+  border-radius: 12px;
+  padding-left: 15%;
+  padding-top: 5%;
+  position: relative;
+  left: 120px;
+  top: 80px;
+}
+.layout > main > section > div.three-columns > div.basic,
+.layout > main > section > div.three-columns > div.teams {
+  width: 420px;
+  height: 455px;
+  z-index: -1;
+}
+.layout > main > section > div.three-columns > div.professional {
+  grid-area: professional;
+  border: 50px solid #1E3448;
+  border-radius: 12px;
+  width: 350px;
+  height: 627px;
+  background-color: #1E3448;
+  color: #fff;
+  padding-top: 10%;
+}
+.layout > main > section > div.three-columns > div.teams {
+  grid-area: teams;
+  border: 1px solid #005AE2;
+  border-radius: 12px;
+  padding-left: 30%;
+  padding-top: 5%;
+  position: relative;
+  right: 120px;
+  top: 80px;
+}
+.layout > main > section > div.three-columns > div.professional > p.prof,
+.layout > main > section > div.three-columns > div.basic > p.base,
+.layout > main > section > div.three-columns > div.teams > p.tee {
+  font-size: 24px;
+}
+.layout > main > section > div.three-columns > div.professional > p > b,
+.layout > main > section > div.three-columns > div.basic > p > b,
+.layout > main > section > div.three-columns > div.teams > p > b {
+  font-size: 48px;
+}
+.layout > main > section > div.three-columns > div.professional > p.ideal,
+.layout > main > section > div.three-columns > div.basic > p.free,
+.layout > main > section > div.three-columns > div.teams > p.share {
+  font-size: 20px;
 }
